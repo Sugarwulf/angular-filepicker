@@ -15,6 +15,7 @@ namespace filestack.Controllers {
     public fileUploaded(file) {
           // save file url to database
           this.file = file;
+          console.log(this.file); //display object within the console 
           this.$scope.$apply(); // force page to update
       }
    constructor(private filepickerService, private $scope: ng.IScope) { }
